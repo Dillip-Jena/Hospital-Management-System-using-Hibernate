@@ -92,10 +92,10 @@ public class ManageDisease {
 		Disease disease = diseaseDao.findById(diseaseId);
 		if(disease != null) {
 			System.out.println("+--------+--------------+-----------------+--------------+-----------------+-------------+");
-            System.out.println("|   ID   |  patient_id  |   patient_name  |  patient_age |   disease_name  |    status   |");
-            System.out.println("+--------+--------------+-----------------+--------------+-----------------+-------------+");
-            System.out.printf("|   %-5d|      %-8d|   %-14s|      %-8d|   %-14s|  %-11s|\n", disease.getDiseaseId(), disease.getPatientId(), disease.getPatientName(), disease.getPatientAge(), disease.getDiseaseName(), disease.getStatus());
-            System.out.println("+--------+--------------+-----------------+--------------+-----------------+-------------+");
+		    	System.out.println("|   ID   |  patient_id  |   patient_name  |  patient_age |   disease_name  |    status   |");
+		    	System.out.println("+--------+--------------+-----------------+--------------+-----------------+-------------+");
+		    	System.out.printf("|   %-5d|      %-8d|   %-14s|      %-8d|   %-14s|  %-11s|\n", disease.getDiseaseId(), disease.getPatientId(), disease.getPatientName(), disease.getPatientAge(), disease.getDiseaseName(), disease.getStatus());
+		    	System.out.println("+--------+--------------+-----------------+--------------+-----------------+-------------+");
 		}
 		else {
 			System.out.println("Disease not found!");
@@ -111,11 +111,11 @@ public class ManageDisease {
 		}
 		
 		System.out.println("+--------+--------------+-----------------+--------------+-----------------+-------------+");
-        System.out.println("|   ID   |  patient_id  |   patient_name  |  patient_age |   disease_name  |    status   |");
-        System.out.println("+--------+--------------+-----------------+--------------+-----------------+-------------+");
+	        System.out.println("|   ID   |  patient_id  |   patient_name  |  patient_age |   disease_name  |    status   |");
+	        System.out.println("+--------+--------------+-----------------+--------------+-----------------+-------------+");
         for(Disease disease : diseases) {
         	System.out.printf("|   %-5d|      %-8d|   %-14s|      %-8d|   %-14s|  %-11s|\n", disease.getDiseaseId(), disease.getPatientId(), disease.getPatientName(), disease.getPatientAge(), disease.getDiseaseName(), disease.getStatus());
-            System.out.println("+--------+--------------+-----------------+--------------+-----------------+-------------+");
+            	System.out.println("+--------+--------------+-----------------+--------------+-----------------+-------------+");
         }
 	}
 	
